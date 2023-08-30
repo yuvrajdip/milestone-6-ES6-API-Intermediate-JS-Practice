@@ -5,7 +5,7 @@ console.log('fetching');
 const url = 'https://jsonplaceholder.typicode.com/todos/1'
 
 //* fetch syntax
-fetch(url)
-.then(response => response.json())
-.then(data=>console.log(data))
+fetch(url)  // Get the data from the url
+.then(response => response.json()) // converts the data to JSON Object
+.then(data=>console.log(data)) // Displays the JSON Object
 
