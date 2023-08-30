@@ -9,3 +9,12 @@ fetch(url)  // Get the data from the url
 .then(response => response.json()) // converts the data to JSON Object
 .then(data=>console.log(data)) // Displays the JSON Object
 
+
+
+
+// fetching data from onclick function
+const loadUsers = () =>{
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then( data => console.log(data))
+}
